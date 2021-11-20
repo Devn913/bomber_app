@@ -31,6 +31,7 @@ dependencies:
   sizer: ^2.0.15
   url_launcher: ^6.0.14
   http: ^0.13.4
+  fluttertoast: ^8.0.8
 
 dev_dependencies:
   flutter_test:

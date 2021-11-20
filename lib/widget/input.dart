@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'package:fluttertoast/fluttertoast.dart';
+
+final TextEditingController mobile = new TextEditingController();
+final TextEditingController sms = new TextEditingController();
 
 class InputFields extends StatelessWidget {
   @override
@@ -19,6 +25,7 @@ class InputFields extends StatelessWidget {
                     side: BorderSide(color: Colors.amber, width: 2.0)),
                 margin: EdgeInsets.all(20),
                 child: TextField(
+                  controller: mobile,
                   textAlign: TextAlign.center,
                   cursorColor: Colors.amber,
                   keyboardType: TextInputType.number,
@@ -40,6 +47,7 @@ class InputFields extends StatelessWidget {
                     side: BorderSide(color: Colors.amber, width: 2.0)),
                 margin: EdgeInsets.all(20),
                 child: TextField(
+                  controller: sms,
                   textAlign: TextAlign.center,
                   cursorColor: Colors.amber,
                   keyboardType: TextInputType.number,
@@ -71,7 +79,7 @@ class InputFields extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
                 ),
-                onPressed: () {},
+                onPressed: _send,
               ),
             )
           ],
@@ -79,4 +87,21 @@ class InputFields extends StatelessWidget {
       ),
     );
   }
+}
+
+_send() async {
+  var _mobile = mobile.text;
+  var _sms = sms.text;
+
+  var url = Uri.parse("https://bomberapi.herokuapp.com/bomb?number=" +
+      _mobile +
+      "&noOfMsg=" +
+      _sms);
+  var response = await http.get(url);
+  final parsedJson = jsonDecode(response.body);
+  Fluttertoast.showToast(
+    msg: parsedJson['status'],
+    toastLength: Toast.LENGTH_SHORT,
+    gravity: ToastGravity.BOTTOM,
+  );
 }

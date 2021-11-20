@@ -54,7 +54,7 @@ class _MyApp extends State<MyApp> {
               child: Container(
                 padding: EdgeInsets.all(10),
                 child: Text(
-                  " Note - This app is for only education purpose only, \n Don't use it for revenge use it for fun, \n I do not take any responsibility. \n If you are facing any error contact US  ",
+                  " Note - This app is for only education purpose only,\n Don't use it for revenge use it for fun, \n I do not take any responsibility. \n If you are facing any error contact Developer",
                   style: TextStyle(
                       fontFamily: 'GooogleSans',
                       fontSize: 19,
@@ -154,7 +154,7 @@ _launchURL() async {
 }
 
 _openGit() async {
-  const url = "https://github/com/devn913";
+  const url = "https://github.com/devn913";
   if (await canLaunch(url)) {
     await launch(url);
   } else {
