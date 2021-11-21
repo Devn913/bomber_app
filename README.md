@@ -12,6 +12,6 @@
 
 * APP UI
 
-![img.jpeg](img.jpeg)
+![img1.jpeg](img1.jpeg)
 
 <a href="app-release.apk">Download APK</a>
