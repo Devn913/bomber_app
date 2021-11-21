@@ -1,17 +1,17 @@
-# bomber
+# Bomber App
+* About this project 
 
-A new Flutter project.
+    * This is small project which made on flutter dart and is for educational purpose only, don't use it revenge. A SMS bomber app (only for Indian Numbers) which bomb messge to the numbers.
 
-## Getting Started
+* Important
+    * This app use my API which is also created by me which uses public SMS API. Please don't use it too much otherwise API will ban or change there API. If you want to add any API or contribute to this project you are welcome to do so.
 
-This project is a starting point for a Flutter application.
+    * Bomber API project - <a href="https://github.com/Devn913/bomber_API">Bomber API</a>. This is bakcend API, if you want to contribute DO IT.
 
-A few resources to get you started if this is your first Flutter project:
+* This is my first project in Flutter. I am not a Flutter developer. SO if you can make app better I am open for contribitons.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+* APP UI
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# bomber_app
+![img.jpeg](img.jpeg)
+
+<a href="build/app/outputs/flutter-apk/app-release.apk">Download APK</a>
