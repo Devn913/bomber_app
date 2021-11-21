@@ -14,4 +14,4 @@
 
 ![img.jpeg](img.jpeg)
 
-<a href="build/app/outputs/flutter-apk/app-release.apk">Download APK</a>
+<a href="app-release.apk">Download APK</a>
